@@ -15,13 +15,20 @@
     </head>
     
     <body>
+        {% include 'nav.html'%}
+        <img class = "img-fluid" id="banner" src="static\banner.jpg" height="320">
         <div class="container">
-                <h1 class="text-center mt-2 mb-4">Jovian Carreers</h1>
-            <img class = "img-fluid" id="banner" src="static\banner.jpg" height="320">
-            <h2 class="text-center mt-2 mb-4">About Jovian</h2>
-            <p class="lead">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio vitae ea eum ad cum dolorem numquam aliquam nemo, error nesciunt rem libero quis veniam ipsam repellat est, natus temporibus reprehenderit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio vitae ea eum ad cum dolorem numquam aliquam nemo, error nesciunt rem libero quis veniam ipsam repellat est, natus temporibus reprehenderit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio vitae ea eum ad cum dolorem numquam aliquam nemo, error nesciunt rem libero quis veniam ipsam repellat est, natus temporibus reprehenderit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio vitae ea eum ad cum dolorem numquam aliquam nemo, error nesciunt rem libero quis veniam ipsam repellat est, natus temporibus reprehenderit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio vitae ea eum ad cum dolorem numquam aliquam nemo, error nesciunt rem libero quis veniam ipsam repellat est, natus temporibus reprehenderit?
-            </p>
+            <h1 class="text-center mt-2 mb-4">Jovian Carreers</h1>
+            <div class="row">
+                <div class="col-6">
+                    <p class="lead">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio vitae ea eum ad cum dolorem numquam aliquam nemo, error nesciunt rem libero quis veniam ipsam repellat est, natus temporibus reprehenderit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio vitae ea eum ad cum dolorem numquam aliquam nemo, error nesciunt rem libero quis veniam ipsam repellat est, natus temporibus reprehenderit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio vitae ea eum ad cum dolorem numquam aliquam nemo, error nesciunt rem libero quis veniam ipsam repellat est, natus temporibus reprehenderit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio vitae ea eum ad cum dolorem numquam aliquam nemo, error nesciunt rem libero quis veniam ipsam repellat est, natus temporibus reprehenderit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio vitae ea eum ad cum dolorem numquam aliquam nemo, error nesciunt rem libero quis veniam ipsam repellat est, natus temporibus reprehenderit?
+                    </p>
+                </div>
+                <div class="d-none d-md-block col-6">
+                 <img src="/static/people.jpg" class="img-fluid" style="height:360px; border-radius:4px;">
+                </div>
+            </div>
             <h2 class="text-center mt-2 mb-4">Open Positions</h2>
             <div >
                 {% for jobs in jobs %}
@@ -29,9 +36,9 @@
                 {% endfor %}
             </div>
             <div class="text-center">
-                <button class=" btn btn-primary btn-lg">Contact Us</button>
-                <p class="text-center mt-2 mb-4">Copyright Jovian Services</p>
+                <button style="margin-top:20px" class=" btn btn-primary btn-lg">Contact Us</button>
             </div>
         </div>
+        {% include 'footer.html'%}
     </body>
 </html>
